@@ -11,7 +11,7 @@ fs.writeFileSync("message.txt", "message.txt \n")
 const userdata= data("Prograd",2020,"BE")
 const password = crypto.createHmac('sha256', secret).update('Prograd').digest('hex');
 fs.appendFileSync("message.txt", "ProGrad Details: \n")
-fs.appendFileSync("message.txt", "\tUserId ->         101, \n")
+fs.appendFileSync("message.txt", "\tUserId ->         1001, \n")
 fs.appendFileSync("message.txt", `\tName ->           ${userdata.name},\n`)
 fs.appendFileSync("message.txt", `\tYear ->           ${userdata.Year},\n`)
 fs.appendFileSync("message.txt", `\tQualification ->  ${userdata.Qualification},\n`)
